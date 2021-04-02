@@ -10,6 +10,7 @@ namespace Encoder
 
         public EncoderProcessor() : this(
             new StringScannerFactory(),
+            new NumberBusinessRule(),
             new SpaceBusinessRule(),
             new YBusinessRule(),
             new DefaultBusinessRule()) { }
