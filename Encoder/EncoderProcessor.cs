@@ -14,6 +14,7 @@ namespace Encoder
             new SpaceBusinessRule(),
             new YBusinessRule(),
             new VowelBusinessRule(),
+            new ConsonantBusinessRule(),
             new DefaultBusinessRule()) { }
 
         internal EncoderProcessor(IStringScannerFactory scannerFactory, params IBusinessRule[] rules)
