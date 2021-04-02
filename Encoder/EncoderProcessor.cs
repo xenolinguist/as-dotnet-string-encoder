@@ -11,6 +11,7 @@ namespace Encoder
         public EncoderProcessor() : this(
             new StringScannerFactory(),
             new SpaceBusinessRule(),
+            new YBusinessRule(),
             new DefaultBusinessRule()) { }
 
         internal EncoderProcessor(IStringScannerFactory scannerFactory, params IBusinessRule[] rules)
