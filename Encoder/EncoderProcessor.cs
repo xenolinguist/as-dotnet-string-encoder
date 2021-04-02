@@ -8,7 +8,7 @@ namespace Encoder
         private readonly IEnumerable<IBusinessRule> _rules;
         private readonly IStringScannerFactory _scannerFactory;
 
-        public EncoderProcessor() : this(new StringScannerFactory()) { }
+        public EncoderProcessor() : this(new StringScannerFactory(), new DefaultBusinessRule()) { }
 
         internal EncoderProcessor(IStringScannerFactory scannerFactory, params IBusinessRule[] rules)
         {
