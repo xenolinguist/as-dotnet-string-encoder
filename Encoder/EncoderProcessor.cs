@@ -13,6 +13,7 @@ namespace Encoder
             new NumberBusinessRule(),
             new SpaceBusinessRule(),
             new YBusinessRule(),
+            new VowelBusinessRule(),
             new DefaultBusinessRule()) { }
 
         internal EncoderProcessor(IStringScannerFactory scannerFactory, params IBusinessRule[] rules)
